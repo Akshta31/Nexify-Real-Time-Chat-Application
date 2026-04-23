@@ -215,7 +215,11 @@ Login/ REGISTER Page:
 ![Login](https://github.com/Akshta31/Nexify-Real-Time-Chat-Application/blob/c8ea9846dd2771da038dfbafe1c5cf14e63e8599/Screenshots/login.png)
 
  Real Time Chat:
- ![Alt Text](image-url)
+ User 1:
+ ![Chat](image-url)
+
+ User 2:
+![Chat](image-url)
  
 
 
