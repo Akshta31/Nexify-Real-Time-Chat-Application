@@ -212,7 +212,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 Screenshots: 
 Login/ REGISTER Page:
-![Alt Text](image-url)
+![Login](https://github.com/Akshta31/Nexify-Real-Time-Chat-Application/blob/c8ea9846dd2771da038dfbafe1c5cf14e63e8599/Screenshots/login.png)
 
  Real Time Chat:
  ![Alt Text](image-url)
