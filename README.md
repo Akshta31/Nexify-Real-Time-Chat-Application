@@ -210,8 +210,5 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 | Database | MongoDB, Mongoose |
 | Auth | JWT, bcryptjs |
 
----
 
-## 📄 License
 
-MIT © Nexify
