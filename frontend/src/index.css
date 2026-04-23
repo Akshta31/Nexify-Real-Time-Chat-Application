@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #0ea5e9;
+  --primary-light: #e0f2fe;
+  --primary-dark: #0284c7;
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --border: #e2e8f0;
+  --text: #0f172a;
+  --muted: #64748b;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Message bubbles */
+.msg-bubble-sent {
+  @apply bg-sky-500 text-white rounded-2xl rounded-br-sm px-4 py-2.5 max-w-xs lg:max-w-md break-words text-sm leading-relaxed shadow-sm;
+}
+.msg-bubble-received {
+  @apply bg-white text-slate-800 rounded-2xl rounded-bl-sm px-4 py-2.5 max-w-xs lg:max-w-md break-words text-sm leading-relaxed shadow-sm border border-slate-100;
+}
+
+/* Typing dots */
+.typing-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #94a3b8;
+  display: inline-block;
+  animation: typing 1.4s infinite;
+}
+.typing-dot:nth-child(2) { animation-delay: 0.2s; }
+.typing-dot:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes typing {
+  0%, 60%, 100% { transform: translateY(0); }
+  30% { transform: translateY(-5px); }
+}
+
+/* Pulse online indicator */
+@keyframes pulse-online {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+.online-pulse {
+  animation: pulse-online 2s infinite;
+}
+
+/* Input focus ring */
+.nexify-input {
+  @apply w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-900 placeholder-slate-400 text-sm
+    focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-transparent transition-all duration-200;
+}
+
+/* Button styles */
+.btn-primary {
+  @apply bg-sky-500 hover:bg-sky-600 text-white font-semibold px-6 py-3 rounded-xl text-sm
+    transition-all duration-200 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed;
+}
+.btn-ghost {
+  @apply text-sky-600 hover:bg-sky-50 font-medium px-4 py-2 rounded-xl text-sm transition-all duration-200;
+}
+
+/* Sidebar item hover */
+.sidebar-item {
+  @apply flex items-center gap-3 px-4 py-3 rounded-xl cursor-pointer transition-all duration-150 hover:bg-sky-50;
+}
+.sidebar-item.active {
+  @apply bg-sky-100;
+}
