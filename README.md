@@ -210,5 +210,15 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 | Database | MongoDB, Mongoose |
 | Auth | JWT, bcryptjs |
 
+Screenshots: 
+Login/ REGISTER Page:
+![Alt Text](image-url)
+
+ Real Time Chat:
+ ![Alt Text](image-url)
+ 
+
+
+
 
 
